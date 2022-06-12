@@ -6,7 +6,7 @@ This project uses two different methods to perform binary segmentation on human 
 Using a pre-trained model from https://github.com/divamgupta/image-segmentation-keras , we finetuned the data using the MADS dataset, and then predicted on the TikTok Dances Dataset. 
 
 ## Machine Learning using Random Forest
-With random forest and light-based parameters, we obtained masks for the two datasets and evaluated them
+We used and adapted the code base from https://github.com/bnsreenu/python_for_microscopists, in which we used the Random Forest model and certain image features such as Canny Edge, Sobel, Gabor, etc., to obtain the masks for the two data sets and their evaluation.
 
 ## Running the code
 **main.py** has the evaluation and mask generation code. Image Segmentation Keras is included for ease of use,  you will still need to have Keras and Tensorflow to run it. You can change the parameters to evaluate or segment your own images.
