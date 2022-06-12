@@ -16,3 +16,5 @@ With random forest and light-based parameters, we obtained masks for the two dat
 **process_images.py** will prepare the MADS masks for use with Image Segmentation Keras. It will overwrite them, please be careful if you are using the dataset for other purposes.
 
 **process_masks.py** processes the images obtained from the Random Forest method and turns it into a binary masks compatible with main.py. You may need to change the path to your generated images.
+
+**ML_Segmentation.py** has the evaluation and generation of masks using a conventional machine learning method: Random Forest. The libraries required for the use of this code are pandas for the creation of dataframes, OpenCV (cv2) for image analysis, NumPy, and the os module. The included parameters can be removed if desired, as well as the SVM implementation. It is necessary to define the paths to obtain the original image parameters and for training.
